@@ -1,0 +1,46 @@
+# IUP Data Structure Mini Project 1
+
+## Project Title
+Stack, Queue, and Deque Implementation in C
+
+## Description
+This project is a simple implementation of three fundamental data structures in C:
+
+- **Stack**
+    initStack() : initialize the stack
+    isStackEmpty() : check if the stack is empty
+    isStackFull() : check if the stack is full
+    push() : add an element to the stack
+    pop() : remove the top element
+    displayStack() : display all stack elements
+- **Queue**
+    initQueue() : initialize the queue
+    isQueueEmpty() : check if the queue is empty
+    isQueueFull() : check if the queue is full
+    enqueue() : add an element to the rear
+    dequeue() : remove the front element
+    displayQueue() : display all queue elements
+- **Deque**
+    initDeque() : initialize the deque
+    isDequeEmpty() : check if the deque is empty
+    isDequeFull() : check if the deque is full
+    insertFront() : add an element to the front
+    insertRear() : add an element to the rear
+    deleteFront() : remove the front element
+    deleteRear() : remove the rear element
+    displayDeque() : display all deque elements
+
+
+The program demonstrates how each structure works by directly calling their functions inside `main()`, without user input.
+
+The goal is to show the basic behavior of each data structure clearly and simply.
+
+---
+
+## How to Run the Project
+
+### 1. Compile the program
+Open the terminal in the project folder and run:
+
+```bash
+gcc main.c -o project
