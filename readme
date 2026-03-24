@@ -45,4 +45,4 @@ The goal is to show the basic behavior of each data structure clearly and simply
 Open the terminal in the project folder and run:
 
 ```bash
-gcc main.c -o project
+gcc -o project project.c && ./project 
