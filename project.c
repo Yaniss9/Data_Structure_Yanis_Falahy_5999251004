@@ -210,30 +210,38 @@ int main() {
     initQueue(&q);
     initDeque(&d);
 
-    printf("===== STACK TEST =====\n");
-    push(&s, "Add customer Budi");
-    push(&s, "Remove customer Siti");
-    push(&s, "Add priority customer Andi");
-    displayStack(&s);
-    pop(&s);
+    printf("===== CUSTOMER SERVICE SYSTEM =====\n");
+
+    printf("\n1. Customers join the regular queue:\n");
+    enqueue(&q, "Rina");
+    enqueue(&q, "Dodi");
+    displayQueue(&q);
+
+    printf("\n2. A VIP customer joins the priority queue:\n");
+    insertFront(&d, "VIP Customer");
+    displayDeque(&d);
+
+    printf("\n3. Save actions in the stack:\n");
+    push(&s, "Rina joined the regular queue");
+    push(&s, "Dodi joined the regular queue");
+    push(&s, "VIP Customer joined the priority queue");
     displayStack(&s);
 
-    printf("\n===== QUEUE TEST =====\n");
-    enqueue(&q, "Budi");
-    enqueue(&q, "Siti");
-    enqueue(&q, "Andi");
-    displayQueue(&q);
+    printf("\n4. Serve one regular customer:\n");
     dequeue(&q);
     displayQueue(&q);
 
-    printf("\n===== DEQUE TEST =====\n");
-    insertRear(&d, "Customer A");
-    insertRear(&d, "Customer B");
-    insertFront(&d, "VIP Customer");
+    printf("\n5. Add one customer to the rear of the priority queue:\n");
+    insertRear(&d, "Elderly Customer");
     displayDeque(&d);
+
+    printf("\n6. Serve one priority customer from the front:\n");
     deleteFront(&d);
-    deleteRear(&d);
     displayDeque(&d);
+
+    printf("\n7. Remove one action from the stack:\n");
+    pop(&s);
+    displayStack(&s);
 
     return 0;
 }
